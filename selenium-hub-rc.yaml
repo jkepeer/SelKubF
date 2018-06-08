@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   name: selenium-hub 
-  namespace:selenium-grid
+  namespace: selenium-grid
   labels:
     app: selenium-hub
 spec:
@@ -11,7 +11,7 @@ spec:
     app: selenium-hub
   template:
     metadata:
-      namespace:selenium-grid
+      namespace: selenium-grid
       labels:
         app: selenium-hub
     spec:
