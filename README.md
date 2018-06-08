@@ -13,17 +13,17 @@ Kubernetes related info:
  - memory limitation: 8Gb RAM.
  ______________________________________________________
 
-      Deploy Selenium Grid Hub:
+Deploy Selenium Grid Hub:
 
-kubectl create --filename=selenium-hub-rc.yaml
+    kubectl create --filename=selenium-hub-rc.yaml
  
-      Deploy Firefox  Nodes:
+Deploy Firefox  Nodes:
 
 Now that the Hub is up, we can deploy workers.
 
 2 Firefox nodes to match.
 
-kubectl create --file=examples/selenium/selenium-node-firefox-rc.yaml
+    kubectl create --file=examples/selenium/selenium-node-firefox-rc.yaml
 
 Once the pods start, you will see them show up in the Selenium Hub interface.
 
